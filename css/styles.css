@@ -1,11 +1,11 @@
 /*
-Author: Maria Cruz
-Date: Current Date
+Author: Leo Wills
+Date: 8/29/2023
 File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, ul {
+body, header, nav, main, footer, img, h1, ul, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,6 +15,11 @@ body, header, nav, main, footer, img, h1, ul {
 img {
     max-width: 100%;
     display: block;
+}
+
+/*Style rule for box sizing applies to all elemtns*/
+*{
+    box-sizing: border-box;
 }
 
 /* Style rules for mobile viewport */
@@ -152,11 +157,39 @@ footer a {
         display: none;
     }
     
+    .aside 
+    {
+        text-align: center;
+        font: 1.5em;
+        font-weight: bold;
+        color: #373684;
+        text-shadow: 3px 3px 10px #8280cb;
+    }
+    .figure {
+        position: relative;
+        max-width: 275px;
+        margin: 2% auto;
+        border: 8px solid #373684;
+    }
+    .figcaption{
+        position: absolute;
+        bottom: 0;
+        background: rgba(55,  54, 133, 0.7);
+        color: #fff;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: bold;
+    }
     /* Tablet Viewport: Style rule for header content */
     span.tab-desk {
         display: inline;
     }
-    
+    .grid{
+        grid-gap: 20px;
+        column-span: 1/ 2;
+    }
     /* Tablet Viewport: Style rules for nav area */
     nav li {
         border-top: none;
